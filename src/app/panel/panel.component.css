@@ -1,0 +1,58 @@
+/* Ensure the grid is centered and properly aligned */
+mat-grid-list {
+    margin: 0 auto; /* Center the grid */
+    width: 80%; /* Reduce the grid's width for better alignment */
+    max-width: 1000px; /* Constrain the max width of the grid */
+    padding: 1em;
+  }
+  
+  /* Each video tile container */
+  mat-grid-tile {
+    display: flex;
+    justify-content: center; /* Horizontally center video content */
+    align-items: center; /* Vertically align video content */
+  }
+  
+  /* Container around the video */
+  .video-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Style the video element */
+  video {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    background: grey; /* Fallback background color */
+    border-radius: 8px; /* Rounded corners for polished look */
+  }
+  
+  /* Position the description on the video */
+  p.video-description {
+    position: absolute;
+    top: 50px; /* Place the label at the top */
+    left: 10px; /* Small left padding */
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background for readability */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 10;
+  }
+  
+  /* Center the buttons below the video grid */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    gap: 1em;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 0.75em 2em;
+    font-size: 1.1em;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,21 @@
+<mat-grid-list cols="2" rowHeight="2:1" gutterSize="20px">
+    <mat-grid-tile>
+        <div class="video-container">
+            <p class="video-description"> Local:</p>
+            <video #local_video [autoplay]="true" [muted]="true"></video>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="video-container">
+            <p class="video-description"> Remote:</p>
+            <video #remote_video [autoplay]="true" [muted]="true"></video>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
+<div class="button-container">
+    <button mat-raised-button color="primary" (click)="startLocalVideo()"> Start Local</button>
+    <button mat-raised-button color="primary" (click)="call()">  Call</button>
+    <button mat-raised-button color="primary" (click)=" pauseLocalVideo()"> Stop Local</button>
+    <button mat-raised-button color="primary" (click)="hangUp()"> Hangup</button>
+
+</div>
